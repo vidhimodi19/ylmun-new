@@ -9,6 +9,11 @@ body {
     font-family: 'Marcellus', serif;
 }
 
+section[id],
+footer[id] {
+    scroll-margin-top: 120px;
+}
+
 .h2, h2 {
     font-size: 32px;
     color: #e9ca94;
@@ -173,8 +178,11 @@ body {
 /* TAGLINE */
 .hero-tagline {
     font-size: 14px;
-    color: var(--gold);
+    color: #fff;
     margin-bottom: 15px;
+    display: inline-flex;
+    background-color: #c8a96a;
+    padding: 0 10px;
 }
 
 /* MAIN TITLE */
@@ -197,7 +205,7 @@ body {
     color: var(--gold);
     padding: 8px 18px;
     border-radius: 25px;
-    font-size: 13px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
