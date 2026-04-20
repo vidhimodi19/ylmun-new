@@ -62,6 +62,20 @@
         z-index: 999;
     }
 
+    .main-header .navbar-brand {
+        padding: 0;
+        margin-right: 14px;
+    }
+
+    .ylmun-header-logo {
+        display: block;
+        width: 150px;
+        height: 58px;
+        max-width: 34vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
     /* LOGO */
     .logo img {
         height: 55px;
@@ -1620,6 +1634,12 @@ section#home {
         background: rgba(11, 42, 71, 0.92);
         backdrop-filter: blur(8px);
         padding: 12px 0;
+    }
+
+    .ylmun-header-logo {
+        width: 115px;
+        height: 44px;
+        max-width: 40vw;
     }
 
     .main-header .navbar-toggler {
