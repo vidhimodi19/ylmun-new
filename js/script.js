@@ -43,4 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    const navbarMenu = document.getElementById("navbarMenu");
+    if (navbarMenu) {
+        navbarMenu.addEventListener("show.bs.collapse", function () {
+            document.body.classList.add("menu-open");
+        });
+
+        navbarMenu.addEventListener("hidden.bs.collapse", function () {
+            document.body.classList.remove("menu-open");
+        });
+    }
 });
