@@ -32,7 +32,7 @@
 
     /* TOP BAR */
     .top-bar {
-        background: #0b2a47;
+        background: #061932;
         padding: 8px 0;
         color: #fff;
         font-size: 14px;
@@ -100,16 +100,50 @@
         padding: 10px 15px;
     }
 
-    .dropdown-custom:hover .dropdown-menu-custom {
-        display: block;
-    }
+.dropdown-custom:hover .dropdown-menu-custom {
+    display: block;
+}
+
+/* Header dropdown (stages) */
+.main-header .dropdown-menu {
+    margin-top: 10px;
+    min-width: 260px;
+    background: rgba(11, 42, 71, 0.96);
+    border: 1px solid rgba(233, 202, 148, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+    padding: 8px;
+}
+
+.main-header .dropdown-item {
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.main-header .dropdown-item:hover,
+.main-header .dropdown-item:focus {
+    color: #0b2a47;
+    background: #e9ca94;
+}
+
+.main-header .dropdown-toggle::after {
+    margin-left: 0.4rem;
+    vertical-align: 0.15em;
+}
 
 
     /* COLORS */
     :root {
-        --blue: #0b2a47;
+        --blue: #061932;
         --gold: #c8a96a;
         --white: #ffffff;
+    }
+
+    .nav-link {
+        color: var(--white);
     }
 
     /* HERO */
@@ -288,6 +322,27 @@
         line-height: 1.16;
     }
 
+    .hero-logo-text-image {
+        width: auto;
+        height: clamp(54px, 6vw, 96px);
+        object-fit: contain;
+    }
+
+    .hero-bottom-pattern {
+        width: 100%;
+        background: #061932;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 0;
+    }
+
+    .hero-bottom-pattern img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-height: 156px;
+        object-fit: cover;
+    }
+
     .hero:not(.inner-hero) .hero-buttons {
         justify-content: flex-start;
     }
@@ -308,10 +363,14 @@
         .hero:not(.inner-hero) .hero-top-brand {
             top: -120px;
         }
+
+        .hero-bottom-pattern img {
+            max-height: 120px;
+        }
     }
     /* SECTION */
     .ylmun-program-section {
-        background: #0b2a47;
+        background: #061932;
         padding: 40px 0;
         color: #fff;
     }
@@ -369,7 +428,7 @@
 
     /* SECTION */
     .ylmun-benefits-section {
-        background: #0b2a47;
+        background: #061932;
         padding: 40px 0;
         color: #fff;
     }
@@ -410,7 +469,7 @@
     .stat-box h2 {
         font-family: 'Marcellus', serif;
         font-size: 60px;
-        color: #0b2a47;
+        color: #061932;
         margin-bottom: 10px;
     }
 
@@ -426,7 +485,7 @@
 
     /* SECTION */
     .leadership-section {
-        background: #0b2a47;
+        background: #061932;
         padding: 40px 0;
         color: #fff;
         text-align: center;
@@ -479,7 +538,7 @@
 
     /* SECTION BASE */
     .highlights-section {
-        background: #0b2a47;
+        background: #061932;
         padding: 40px 0;
         color: #fff;
     }
@@ -746,7 +805,7 @@
 
     /* SECTION */
     .mun-institute {
-        background: #0b2a47;
+        background: #061932;
         padding: 50px 0;
         color: #fff;
     }
@@ -929,7 +988,7 @@
 
     /* FOOTER BASE */
     .mymun-footer {
-        background: #0b2a47;
+        background: #061932;
         color: #fff;
         position: relative;
         padding-top: 40px;
@@ -944,7 +1003,7 @@
         left: 0;
         width: 100%;
         height: 100px;
-        background: #0b2a47;
+        background: #061932;
         border-top-left-radius: 100% 60px;
         border-top-right-radius: 100% 60px;
     }
@@ -1072,7 +1131,7 @@
 
     /* SECTION */
     .competition-section {
-        background: #0f4b87;
+        background: rgba(6, 25, 50, 0.92);
         padding: 70px 0;
         overflow: hidden;
     }
@@ -1136,7 +1195,7 @@
     /* TITLE INSIDE */
     .card-box h3 {
         font-size: 20px;
-        color: #17488a;
+        color: #061932;
         font-weight: 700;
         line-height: 1.2;
     }
@@ -1152,7 +1211,7 @@
     /* BUTTON */
     .stage-btn {
         display: block;
-        background: #17488a;
+        background: #061932;
         color: #fff;
         text-decoration: none;
         font-size: 16px;
@@ -1237,11 +1296,11 @@
 /* force dark sections even if inline bg exists */
 .preliminary-page section{
     padding:80px 0;
-    background:#0b2a47 !important;
+    background:#061932 !important;
 }
 
 .preliminary-page section:nth-of-type(even){
-    background:linear-gradient(180deg,#0d3356,#0b2a47) !important;
+    background:linear-gradient(180deg,#082240,#061932) !important;
 }
 
 /* title */
@@ -1302,7 +1361,7 @@
 }
 
 .preliminary-page .table-wrap thead th{
-    color:#0b2a47;
+    color:#061932;
     padding:18px;
     font-size:16px;
     font-weight:700;
@@ -1346,7 +1405,7 @@
     height:70px;
     border-radius:50%;
     background:#e9ca94;
-    color:#0b2a47;
+    color:#061932;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -1383,7 +1442,7 @@
 
 /* DEFAULT DARK */
 .preliminary-page section{
-    background:#0b2a47 !important;
+    background:#061932 !important;
 }
 
 /* LIGHT SECTIONS */
@@ -1393,9 +1452,10 @@
 }
 
 /* LIGHT SECTION TITLE */
+.schedule-title-bar,
 .preliminary-page section:nth-of-type(3) .sec-title h2,
 .preliminary-page section:nth-of-type(5) .sec-title h2{
-    color:#0b2a47 !important;
+    color:#061932 !important;
 }
 
 .preliminary-page section:nth-of-type(3) .sec-title p,
@@ -1430,7 +1490,7 @@
 }
 
 .preliminary-page section:nth-of-type(5) .syllabus-item h4{
-    color:#0b2a47 !important;
+    color:#061932 !important;
 }
 
 .preliminary-page section:nth-of-type(5) .syllabus-item p{
@@ -1439,7 +1499,7 @@
 
 /* DAY 3 LIGHT/DARK PREMIUM */
 .preliminary-page section:nth-of-type(6){
-    background:linear-gradient(180deg,#0d3356,#0b2a47) !important;
+    background:linear-gradient(180deg,#082240,#061932) !important;
 }
 
 section#home {
@@ -1573,7 +1633,7 @@ section#home {
         right: 0;
         width: min(84vw, 360px);
         height: 100vh;
-        background: #0b2a47;
+        background: #061932;
         padding: 86px 24px 24px;
         transform: translateX(100%);
         transition: transform 0.3s ease;
@@ -1627,6 +1687,33 @@ section#home {
         font-size: 17px;
         color: #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .main-header .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        min-width: 100%;
+        margin: 0 0 8px;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0 0 0 10px;
+    }
+
+    .main-header .dropdown-item {
+        color: #dbe5f3;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        font-size: 15px;
+        white-space: normal;
+    }
+
+    .main-header .dropdown-item:hover,
+    .main-header .dropdown-item:focus {
+        color: #e9ca94;
+        background: transparent;
     }
 
     .main-header .apply-btn {
@@ -1689,7 +1776,7 @@ section#home {
 }
 
 .preliminary-page .national-round-section .table-wrap thead {
-    background: #1f4f82;
+    background: #061932;
 }
 
 .preliminary-page .national-round-section .table-wrap thead th {
@@ -1707,6 +1794,7 @@ section#home {
 
 .preliminary-page .table-wrap tbody td ul li {
     margin-bottom: 4px;
+    text-align: left;
 }
 
 .preliminary-page .table-wrap tbody td ul li:last-child {
@@ -1741,7 +1829,7 @@ section#home {
 }
 
 .preliminary-page .syllabus-premium-section .sec-title h2 {
-    color: #1f4f82 !important;
+    color: #061932 !important;
 }
 
 .preliminary-page .syllabus-premium-card {
@@ -1760,7 +1848,7 @@ section#home {
 }
 
 .preliminary-page .syllabus-row-head {
-    background: linear-gradient(90deg, #1f4f82 0%, #48679d 60%, rgba(72, 103, 157, 0.04) 100%);
+    background: linear-gradient(90deg, #061932 0%, #082240 60%, rgba(8, 34, 64, 0.04) 100%);
     color: #fff;
     font-size: clamp(20px, 1.6vw, 28px);
     line-height: 1.2;
@@ -1779,8 +1867,8 @@ section#home {
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    border: 4px solid #1f4f82;
-    color: #1f4f82;
+    border: 4px solid #061932;
+    color: #061932;
     display: grid;
     place-items: center;
     font-size: 56px;
@@ -1818,6 +1906,8 @@ section#home {
     position: relative;
     background: #eef3fb !important;
     overflow: hidden;
+    padding-top: 78px;
+    padding-bottom: 78px;
 }
 
 .preliminary-page .competition-day2-section::before {
@@ -1825,7 +1915,7 @@ section#home {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgba(244, 247, 252, 0.90) 0%, rgba(244, 247, 252, 0.84) 100%),
+        linear-gradient(180deg, rgba(244, 247, 252, 0.86) 0%, rgba(244, 247, 252, 0.80) 100%),
         url("../images/Competition-Overview-3.jpg") center center / cover no-repeat;
     z-index: 0;
 }
@@ -1835,42 +1925,49 @@ section#home {
     z-index: 1;
 }
 
-.preliminary-page .day2-title-bar {
+/* .preliminary-page .schedule-title-bar {
     display: inline-block;
     margin-bottom: 22px;
     color: #fff !important;
     text-transform: none;
-    font-size: clamp(24px, 1.9vw, 34px);
+    font-size: clamp(28px, 2vw, 42px);
     line-height: 1.2;
-    padding: 12px 22px;
+    padding: 12px 28px;
     background: linear-gradient(90deg, #1f4f82 0%, #506da1 62%, rgba(80, 109, 161, 0.08) 100%);
-}
+} */
 
-.preliminary-page .competition-day2-section .table-wrap {
-    background: rgba(255, 255, 255, 0.55);
+.preliminary-page .schedule-table-wrap {
+    background: rgba(255, 255, 255, 0.62);
     border: 1px solid rgba(31, 79, 130, 0.22);
     box-shadow: 0 10px 24px rgba(18, 52, 90, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    backdrop-filter: blur(1px);
 }
 
-.preliminary-page .competition-day2-section .table-wrap thead {
-    background: #1f4f82;
+.preliminary-page .schedule-table-wrap thead {
+    background: #061932;
 }
 
-.preliminary-page .competition-day2-section .table-wrap thead th {
+.preliminary-page .schedule-table-wrap thead th {
     color: #fff;
-    font-size: clamp(14px, 1vw, 16px);
+    font-size: clamp(16px, 1vw, 18px);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
-.preliminary-page .competition-day2-section .table-wrap tbody td {
+.preliminary-page .schedule-table-wrap tbody td {
     text-align: center;
     color: #111827 !important;
-    font-size: clamp(13px, 0.92vw, 15px);
-    line-height: 1.45;
+    font-size: clamp(15px, 0.95vw, 16px);
+    line-height: 1.4;
     border-bottom: 1px solid rgba(31, 79, 130, 0.2);
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
-.preliminary-page .competition-day2-section .table-wrap tbody tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.34);
+.preliminary-page .schedule-table-wrap tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.26);
 }
 
 .preliminary-page .national-round-section .table-wrap tbody tr:nth-child(even) {
@@ -1984,15 +2081,15 @@ section#home {
 
 /* International semifinal awards-only layout */
 .international-page .awards-only-section {
-    background: linear-gradient(180deg, #0f3b66 0%, #16497b 52%, #1f4f82 100%) !important;
+    background: linear-gradient(180deg, #0f3b66 0%, #16497b 52%, #061932 100%) !important;
     padding-top: 84px;
     padding-bottom: 84px;
 }
 
-.international-page .main-header .navbar {
+/* .international-page .main-header .navbar {
     background: rgba(11, 42, 71, 0.92);
     backdrop-filter: blur(6px);
-}
+} */
 
 .international-page .main-header .nav-link {
     color: #ffffff;
@@ -2110,17 +2207,17 @@ section#home {
 }
 
 /* Switzerland summit page (third page) */
-.switzerland-page .main-header .navbar {
+/* .switzerland-page .main-header .navbar {
     background: rgba(11, 42, 71, 0.92);
     backdrop-filter: blur(6px);
-}
+} */
 
 .switzerland-page .main-header .nav-link {
     color: #ffffff;
 }
 
 .switzerland-page .summit-top-section {
-    background: linear-gradient(180deg, #0f3b66 0%, #16497b 52%, #1f4f82 100%) !important;
+    background: linear-gradient(180deg, #0f3b66 0%, #16497b 52%, #061932 100%) !important;
     padding-top: 84px;
     padding-bottom: 72px;
 }
@@ -2190,7 +2287,7 @@ section#home {
 
 .switzerland-page .summit-card-front h3,
 .switzerland-page .summit-card-overlay h3 {
-    color: #1f4f82;
+    color: #061932;
     font-size: clamp(20px, 1.6vw, 30px);
     line-height: 1.2;
     margin-bottom: 10px;
@@ -2231,7 +2328,7 @@ section#home {
 }
 
 .switzerland-page section.finals-awards-section {
-    background: #1f4f82 !important;
+    background: #061932 !important;
     padding-top: 56px;
     padding-bottom: 60px;
 }
@@ -2352,10 +2449,10 @@ section#home {
     top: 0;
 }
 
-.contact-page .main-header .navbar {
+/* .contact-page .main-header .navbar {
     background: rgba(11, 42, 71, 0.92);
     backdrop-filter: blur(6px);
-}
+} */
 
 .contact-page .hero {
     height: 55vh;
@@ -2376,7 +2473,7 @@ section#home {
 }
 
 .contact-page .contact-intro-section {
-    background: #0b2a47 !important;
+    background: #061932 !important;
     padding: 78px 0;
 }
 
@@ -2386,7 +2483,7 @@ section#home {
 }
 
 .contact-page .contact-faq-section {
-    background: linear-gradient(180deg, #0d3356, #0b2a47) !important;
+    background: linear-gradient(180deg, #0d3356, #061932) !important;
     padding: 78px 0;
 }
 
@@ -2453,7 +2550,7 @@ section#home {
 }
 
 .contact-page .contact-submit-btn {
-    background: #17488a;
+    background: #061932;
     color: #fff;
     border: none;
     border-radius: 999px;
@@ -2528,7 +2625,123 @@ section#home {
         top: 56%;
     }
 
-    .contact-page .contact-info-grid {
+.contact-page .contact-info-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Home thought quote section */
+.home-thought-section {
+    position: relative;
+    background: #061932;
+    overflow: hidden;
+    padding-top: 88px;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+.home-thought-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, #114274db, #061932f0),
+        url("../images/United-Nations-Summit.jpg") center/cover no-repeat;
+    z-index: 0;
+}
+
+.home-thought-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.08), transparent 55%);
+    z-index: 0;
+}
+
+.home-thought-content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.home-thought-content h3 {
+    color: #c8a96a;
+    font-size: clamp(34px, 2.6vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.home-thought-content p {
+    color: #f1f5fb;
+    font-size: clamp(14px, 1vw, 16px);
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.home-thought-bottom-art {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: #061932;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.home-thought-bottom-art img {
+    width: 100%;
+    max-height: 128px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Professional reveal animations (global) */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(28px) scale(0.985);
+    transition:
+        opacity 700ms ease,
+        transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.reveal-left {
+    transform: translateX(-34px) scale(0.985);
+}
+
+.reveal-on-scroll.reveal-right {
+    transform: translateX(34px) scale(0.985);
+}
+
+.reveal-on-scroll.reveal-zoom {
+    transform: scale(0.94);
+}
+
+.reveal-on-scroll.reveal-in {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* Keep full background blocks static; animate inner content only */
+section.reveal-on-scroll,
+.mymun-footer.reveal-on-scroll,
+.hero-bottom-pattern.reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #061932;
 }
