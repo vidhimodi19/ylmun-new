@@ -214,6 +214,90 @@
         color: #000;
     }
 
+    /* HOME HERO LOOK (banner only, no font-size/header changes) */
+    .hero:not(.inner-hero) .hero-overlay {
+        background:
+            linear-gradient(90deg, rgba(11, 42, 71, 0.72) 0%, rgba(11, 42, 71, 0.50) 42%, rgba(11, 42, 71, 0.40) 100%),
+            linear-gradient(180deg, rgba(38, 93, 156, 0.42) 0%, rgba(11, 42, 71, 0.28) 100%);
+    }
+
+    .hero:not(.inner-hero) .home-hero-content {
+        width: min(1220px, 92vw);
+        left: 50%;
+        top: 56%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        padding-left: clamp(16px, 3vw, 54px);
+        padding-right: clamp(16px, 2vw, 28px);
+    }
+
+    .hero:not(.inner-hero) .hero-top-brand {
+        position: absolute;
+        top: -170px;
+        right: clamp(8px, 2vw, 24px);
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .hero:not(.inner-hero) .hero-top-brand-text {
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    .hero:not(.inner-hero) .hero-top-brand-badge {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: #ffffff;
+        font-size: 12px;
+        letter-spacing: 0.8px;
+        border: 2px solid rgba(255, 255, 255, 0.75);
+        background: conic-gradient(
+            #1f8fcb 0deg 35deg,
+            #0ba95b 35deg 70deg,
+            #f2a900 70deg 105deg,
+            #e74c3c 105deg 140deg,
+            #9b59b6 140deg 175deg,
+            #2ecc71 175deg 210deg,
+            #3498db 210deg 245deg,
+            #f39c12 245deg 280deg,
+            #16a085 280deg 315deg,
+            #8e44ad 315deg 360deg
+        );
+    }
+
+    .hero:not(.inner-hero) .hero-plus-badge {
+        display: inline-grid;
+        place-items: center;
+        width: 20px;
+        height: 20px;
+        margin-left: 6px;
+        vertical-align: middle;
+        color: #fff;
+        background: #d7262b;
+        border-radius: 2px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    .hero:not(.inner-hero) .hero-tagline {
+        background-color: rgba(200, 169, 106, 0.9);
+        padding: 6px 12px;
+    }
+
+    .hero:not(.inner-hero) .hero-title {
+        max-width: 900px;
+        line-height: 1.16;
+    }
+
+    .hero:not(.inner-hero) .hero-buttons {
+        justify-content: flex-start;
+    }
+
     @media (max-width: 768px) {
         .hero-title {
             font-size: 26px;
@@ -225,6 +309,10 @@
 
         .hero-tagline {
             font-size: 12px;
+        }
+
+        .hero:not(.inner-hero) .hero-top-brand {
+            top: -120px;
         }
     }
     /* SECTION */
