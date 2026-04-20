@@ -270,18 +270,12 @@
     }
 
     .hero:not(.inner-hero) .hero-plus-badge {
-        display: inline-grid;
-        place-items: center;
-        width: 20px;
-        height: 20px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
         margin-left: 6px;
         vertical-align: middle;
-        color: #fff;
-        background: #d7262b;
-        border-radius: 2px;
-        font-size: 16px;
-        line-height: 1;
-        font-weight: 700;
+        object-fit: contain;
     }
 
     .hero:not(.inner-hero) .hero-tagline {
@@ -1818,6 +1812,65 @@ section#home {
         font-size: 40px;
         border-width: 3px;
     }
+}
+
+.preliminary-page .competition-day2-section {
+    position: relative;
+    background: #eef3fb !important;
+    overflow: hidden;
+}
+
+.preliminary-page .competition-day2-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(244, 247, 252, 0.90) 0%, rgba(244, 247, 252, 0.84) 100%),
+        url("../images/Competition-Overview-3.jpg") center center / cover no-repeat;
+    z-index: 0;
+}
+
+.preliminary-page .competition-day2-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.preliminary-page .day2-title-bar {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #fff !important;
+    text-transform: none;
+    font-size: clamp(24px, 1.9vw, 34px);
+    line-height: 1.2;
+    padding: 12px 22px;
+    background: linear-gradient(90deg, #1f4f82 0%, #506da1 62%, rgba(80, 109, 161, 0.08) 100%);
+}
+
+.preliminary-page .competition-day2-section .table-wrap {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(31, 79, 130, 0.22);
+    box-shadow: 0 10px 24px rgba(18, 52, 90, 0.08);
+}
+
+.preliminary-page .competition-day2-section .table-wrap thead {
+    background: #1f4f82;
+}
+
+.preliminary-page .competition-day2-section .table-wrap thead th {
+    color: #fff;
+    font-size: clamp(14px, 1vw, 16px);
+}
+
+.preliminary-page .competition-day2-section .table-wrap tbody td {
+    text-align: center;
+    color: #111827 !important;
+    font-size: clamp(13px, 0.92vw, 15px);
+    line-height: 1.45;
+    border-bottom: 1px solid rgba(31, 79, 130, 0.2);
+}
+
+.preliminary-page .competition-day2-section .table-wrap tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.34);
 }
 
 .preliminary-page .national-round-section .table-wrap tbody tr:nth-child(even) {
